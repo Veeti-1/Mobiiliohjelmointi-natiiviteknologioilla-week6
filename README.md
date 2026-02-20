@@ -1,0 +1,2 @@
+# Mobiiliohjelmointi-natiiviteknologioilla-week6
+Mobiiliohjelmointi-natiiviteknologioilla kurssin viikkotehtävä6
