@@ -31,7 +31,7 @@ import kotlin.collections.forEach
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun viewModelHomeScreen(viewModel: TaskViewModel, onNavigateCalendar: () -> Unit = {}, onNavigateSettings:()-> Unit={}, onNavigateWeather:()->Unit={}) {
+fun viewModelHomeScreen(viewModel: TaskViewModel, onNavigateCalendar: () -> Unit = {}, onNavigateSettings:()-> Unit={}) {
     val tasks by viewModel.tasks.collectAsState()
     val selectedTask by viewModel.selectedTask.collectAsState()
     val addTaskFlag by viewModel.addTaskDialogVisible.collectAsState()
@@ -59,12 +59,7 @@ fun viewModelHomeScreen(viewModel: TaskViewModel, onNavigateCalendar: () -> Unit
 
                     )
                 }
-                IconButton(onClick = onNavigateWeather) {
-                    Icon(
-                        Icons.Default.Cloud,
-                        contentDescription = "Show Weather"
-                    )
-                }
+
             }
         )
         Row(

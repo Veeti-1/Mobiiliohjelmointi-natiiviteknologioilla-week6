@@ -78,38 +78,7 @@ class TaskViewModel(private val repository: TaskRepository): ViewModel() {
             _selectedTask.value = null
         }
     }
-    /*fun toggleDone(id:Int){
-        _tasks.value = _tasks.value.map{
-            if(it.id == id){
-                it.copy(done = !it.done)
-            }else{
-                it
-            }
-        }
-    }*/
 
-    /*
-    fun filterByDone(done: Boolean)
-    {
-        _tasks.value = _tasks.value.filter { it.done == done }
-    }
-    fun selectTask(task:Task){
-        _selectedTask.value = task
-    }
-    fun sortByDueDate(){
-        _tasks.value = _tasks.value.sortedBy { it.dueDate }
-    }
-    fun removeTask(id:Int){
-        _tasks.value = _tasks.value.filter { it.id!=id}
-    }
-    fun updateTask(updated:Task){
-        _tasks.value = tasks.value.map {
-            if(it.id == updated.id) updated else it
-
-        }
-        _selectedTask.value = null
-    }
-    */
     fun selectTask(task:Task){
         _selectedTask.value = task
     }
