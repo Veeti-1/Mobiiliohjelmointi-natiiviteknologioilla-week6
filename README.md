@@ -17,4 +17,4 @@
 ### Miten datavirta kulkee
   - UI: kutsuu viewmodel funktioita -> viewmodel kutsuu repositoryn funktioita ja palauttaa UI:lle datan -> repository palauttaa viewmodelille Dao funktioista saadun datan -> Dao tekee SQL Queryn tietokantaan ja  palauttaa tietokannasta saadun datan.
 #### APK löytyy releasesta
-#### Youtube-demo: 
+#### Youtube-demo: https://youtu.be/qu-4D59dt7s
